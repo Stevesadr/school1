@@ -1,6 +1,6 @@
-import ChangeBackground from "@/Components/MainPage/ChangeBackground";
-import ParagraphText from "@/Components/Ficher/ParagraphText";
-import PinkBtn from "../Components/Ficher/PinkBtn";
+import ChangeBackground from "@/components/mainPage/ChangeBackground";
+import ParagraphText from "@/components/ficher/ParagraphText";
+import PinkBtn from "../components/ficher/PinkBtn";
 import Tea from "../public/photo_6008189962253615437_y.jpg";
 import Image from "next/image";
 import Logo from "../public/cropped-photo_6005693113080860372_y.png";
@@ -17,7 +17,9 @@ export default function Home(props) {
         <ChangeBackground carousel={props.carouselResponse} />
       </div>
       <section className="bg-gray-100 p-8 text-center flex flex-col items-center justify-center m-11 z-[-100]">
-        <h2 className="text-2xl font-bold text-gray-800">دوره متوسطه دوم</h2>
+        <h2 className="text-2xl font-bold text-gray-800">
+          دوره متوسطه دوم سلام چطوری
+        </h2>
         {isOpen ? null : (
           <ParagraphText>اینجا شروع آینده موفق شغلی شماست!</ParagraphText>
         )}

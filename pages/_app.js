@@ -1,13 +1,13 @@
-import Nav from "@/Components/Navigate/Nav";
+import Nav from "@/components/navigate/Nav";
 import { NavContext } from "../Context/Store";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-import Footer from "@/Components/Footer/Footer";
+import Footer from "@/components/footer/Footer";
 import localFont from "next/font/local";
 import Cookies from "js-cookie";
 import { useRouter } from "next/router";
-import Loader from "@/Components/Ficher/Loader";
+import Loader from "@/components/ficher/Loader";
 
 const Koodak = localFont({ src: "../Fonts/KoodakBold.woff" });
 

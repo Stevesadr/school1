@@ -1,5 +1,5 @@
-import ParagraphText from "@/Components/Ficher/ParagraphText";
-import PinkBtn from "@/Components/Ficher/PinkBtn";
+import ParagraphText from "@/components/ficher/ParagraphText";
+import PinkBtn from "@/components/ficher/PinkBtn";
 
 export default function IntroductionSection({ isNavbarOpen }) {
   return (

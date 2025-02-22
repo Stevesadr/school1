@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ParagraphText from "../Ficher/ParagraphText";
-import PinkBtn from "../Ficher/PinkBtn";
+import ParagraphText from "../ficher/ParagraphText";
+import PinkBtn from "../ficher/PinkBtn";
 
 const ChangeBackground = (props) => {
   const [index, setIndex] = useState(0);

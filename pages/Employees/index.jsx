@@ -1,5 +1,5 @@
 import { GET } from "@/API/getRepository";
-import Card from "@/Components/Ficher/Card";
+import Card from "@/components/ficher/Card";
 import React from "react";
 
 const index = (props) => {

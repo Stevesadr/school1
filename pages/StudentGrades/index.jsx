@@ -1,4 +1,4 @@
-import GradesTable from "@/Components/GradesTable/GradesTable";
+import GradesTable from "@/components/gradesTable/GradesTable";
 import React from "react";
 
 const index = (props) => {

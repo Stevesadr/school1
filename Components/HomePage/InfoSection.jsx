@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ParagraphText from "@/Components/Ficher/ParagraphText";
-import PinkBtn from "@/Components/Ficher/PinkBtn";
+import ParagraphText from "@/components/ficher/ParagraphText";
+import PinkBtn from "@/components/ficher/PinkBtn";
 import Tea from "@/public/photo_6008189962253615437_y.jpg";
 import { useContext } from "react";
 import { NavContext } from "@/Context/Store";
