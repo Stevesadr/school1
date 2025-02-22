@@ -1,7 +1,6 @@
 import ChangeBackground from "@/Components/MainPage/ChangeBackground";
 import ParagraphText from "@/Components/Ficher/ParagraphText";
 import PinkBtn from "@/Components/Ficher/PinkBtn";
-import BackgroundBlob from "../public/blob (1).svg";
 import Tea from "../public/photo_6008189962253615437_y.jpg";
 import Image from "next/image";
 import Logo from "../public/cropped-photo_6005693113080860372_y.png";
@@ -63,14 +62,6 @@ export default function Home(props) {
           مطالب ما را در شبکه های اجتماعی و وبلاگ دنبال کنید
         </ParagraphText>
 
-        <div className="hidden md:block z-[-100]">
-          <Image
-            src={BackgroundBlob}
-            alt="background-image"
-            className="absolute left-0 bottom-0 z-0 w-96"
-            loading="lazy"
-          />
-        </div>
         <div className="w-full flex items-center justify-end z-10 m-10 md:ml-36">
           <PinkBtn> آرشیو مقالات </PinkBtn>
         </div>
@@ -92,12 +83,6 @@ export default function Home(props) {
             loading="lazy"
           />
         </div>
-        <Image
-          src={BackgroundBlob}
-          className="hidden md:block w-[60%] absolute z-[-1]"
-          alt="background-bolb"
-          loading="lazy"
-        />
       </div>
       <div className="w-full md:flex md:items-center md:justify-center ">
         <div className="md:flex md:items-center md:justify-center md:max-w-[85%]">
