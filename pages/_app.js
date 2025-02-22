@@ -55,14 +55,12 @@ export default function App({ Component, pageProps }) {
           <NavContext.Provider
             value={{ isOpen, setIsOpen, isLoggedIn, setIsLoggedIn }}
           >
-            <div>
-              <Nav />
-            </div>
+            <Nav />
+
             <Component {...pageProps} />
           </NavContext.Provider>
-          <div>
-            <Footer />
-          </div>
+
+          <Footer />
         </div>
       )}
     </>
