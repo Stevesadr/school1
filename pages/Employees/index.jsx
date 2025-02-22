@@ -1,5 +1,5 @@
 import { GET } from "@/API/getRepository";
-import Card from "../../components/ficher/Card";
+import Card from "../../components/ficher/Card.jsx";
 import React from "react";
 
 const index = (props) => {
@@ -8,7 +8,7 @@ const index = (props) => {
       <h1 className="text-2xl font-bold mb-6 text-center"> کادر اجرایی</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {props.resEmployeesAPI.map((item) => {
-          return <Card key={item.id} teacher={item} />;
+          return <Card key={item.name} teacher={item} />;
         })}
       </div>
     </div>
