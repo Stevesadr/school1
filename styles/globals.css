@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: "Koodak";
-  src: url("../public/Fonts/KoodakBold.woff") format("woff");
+  src: url("../Fonts/KoodakBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
