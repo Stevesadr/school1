@@ -47,7 +47,6 @@ const StudentProfile = (props) => {
     setIsSubmitting(false);
     setIsSubmitted(true);
   };
-  setStudentCalss(props.studentInfoRespons.grade);
 
   const handleDownloadPDF = async () => {
     const node = document.getElementById("student-info");
