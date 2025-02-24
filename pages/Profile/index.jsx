@@ -249,5 +249,9 @@ export async function getServerSideProps(context) {
         examRespons,
       },
     };
-  } catch (error) {}
+  } catch (error) {
+    return {
+      props: {},
+    };
+  }
 }

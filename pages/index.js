@@ -128,13 +128,11 @@ export async function getServerSideProps(context) {
       props: {
         carouselResponse,
       },
-      revalidate: 86400,
     };
   } catch (error) {
     console.error("خطا در دریافت داده‌ها:", error);
     return {
       props: { carouselResponse: [] },
-      revalidate: 86400,
     };
   }
 }

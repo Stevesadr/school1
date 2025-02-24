@@ -23,13 +23,11 @@ export async function getServerSideProps(context) {
     const resTeacherAPI = await urlTeacherAPI.json();
     return {
       props: { resTeacherAPI },
-      revalidate: 86400,
     };
   } catch (error) {
     console.error("خطا در دریافت داده‌ها:", error);
     return {
       props: { resTeacherAPI: [] },
-      revalidate: 86400,
     };
   }
 }

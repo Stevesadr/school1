@@ -25,13 +25,11 @@ export async function getServerSideProps(context) {
 
     return {
       props: { resEmployeesAPI },
-      revalidate: 86400,
     };
   } catch (error) {
     console.error("خطا در دریافت داده‌ها:", error);
     return {
       props: { resEmployeesAPI: [] },
-      revalidate: 86400,
     };
   }
 }
