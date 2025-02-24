@@ -12,6 +12,7 @@ import { CgProfile } from "react-icons/cg";
 import { useRouter } from "next/router";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";
+import { MdClass } from "react-icons/md";
 import Cookies from "js-cookie";
 
 const Nav = () => {
@@ -95,6 +96,13 @@ const Nav = () => {
                 >
                   <PiHandDepositBold />
                   <span className="mx-4">واریز </span>
+                </Link>{" "}
+                <Link
+                  href={"./StudentClass"}
+                  className="flex items-center justify-center  text-gray-700 text-decoration-none bg-gray-200 hover:bg-slate-100 p-1 rounded-md"
+                >
+                  <MdClass />
+                  <span className="mx-4">کلاس ها </span>
                 </Link>
                 <button
                   className="my-3 flex shadow-none items-center justify-center text-red-600 text-decoration-none  bg-gray-200 p-1 rounded-md"
@@ -194,6 +202,13 @@ const Nav = () => {
               >
                 <PiHandDepositBold />
                 <span className=" mx-4">واریز </span>
+              </Link>
+              <Link
+                href={"./StudentClass"}
+                className="flex items-center justify-center  text-gray-700 text-decoration-none bg-gray-200 hover:bg-slate-100 p-1 rounded-md"
+              >
+                <MdClass />
+                <span className="mx-4">کلاس ها </span>
               </Link>
               <button
                 className="my-3 flex items-center justify-center text-red-600 text-decoration-none shadow-sm bg-gray-200 p-1 rounded-md"

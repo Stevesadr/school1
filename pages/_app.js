@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setFirstLoading(false);
-    }, 1500); // شبیه‌سازی مدت‌زمان بارگذاری
+    }, 1500);
   }, []);
 
   useEffect(() => {
@@ -53,7 +53,12 @@ export default function App({ Component, pageProps }) {
         <div className={Koodak.className}>
           {loading && <Loader />}
           <NavContext.Provider
-            value={{ isOpen, setIsOpen, isLoggedIn, setIsLoggedIn }}
+            value={{
+              isOpen,
+              setIsOpen,
+              isLoggedIn,
+              setIsLoggedIn,
+            }}
           >
             <Nav />
 

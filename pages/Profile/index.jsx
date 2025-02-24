@@ -1,5 +1,5 @@
 import { GETWiTHTOKEN } from "@/API/getWithToken";
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { toPng } from "html-to-image";
 import { PDFDocument, StandardFonts, error, rgb } from "pdf-lib";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -8,6 +8,7 @@ import { POSTWITHTOKEN } from "@/API/postWithToken";
 import { Toast, ToastBody, ToastContainer } from "react-bootstrap";
 import * as Yup from "yup";
 import { BeatLoader } from "react-spinners";
+import { NavContext } from "@/Context/Store";
 
 const StudentProfile = (props) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,6 +47,8 @@ const StudentProfile = (props) => {
     setIsSubmitting(false);
     setIsSubmitted(true);
   };
+  setStudentCalss(props.studentInfoRespons.grade);
+
   const handleDownloadPDF = async () => {
     const node = document.getElementById("student-info");
     const dataUrl = await toPng(node);
@@ -186,6 +189,26 @@ const StudentProfile = (props) => {
                 : "پرداخت نشده"}
             </p>
           </div>
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            نام کاربری
+          </label>
+          <p className="mt-1 block w-full px-3 py-2 bg-gray-100 rounded-md">
+            {props.studentInfoRespons.user_skyroom !== null
+              ? props.studentInfoRespons.user_skyroom
+              : "نام کاربری تنظیم نشده"}
+          </p>
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            رمز عبور
+          </label>
+          <p className="mt-1 block w-full px-3 py-2 bg-gray-100 rounded-md">
+            {props.studentInfoRespons.password_skyroom !== null
+              ? props.studentInfoRespons.password_skyroom
+              : "رمز عبور تنظیم نشده"}
+          </p>
         </div>
         <div className="mt-6 flex justify-end">
           <button

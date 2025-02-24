@@ -17,7 +17,7 @@ const index = (props) => {
 
 export default index;
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   try {
     const urlTeacherAPI = await GET("teachers/list/");
     const resTeacherAPI = await urlTeacherAPI.json();
